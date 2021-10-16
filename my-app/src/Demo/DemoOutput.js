@@ -4,8 +4,7 @@ import MyParagraph from './MyParagraph';
 const DemoOutput = (props) => {
   console.log("demo output");
   return (
-    
-      <MyParagraph>{props.show ? "This is New" : ""}</MyParagraph>
+      <MyParagraph>{props.show ? "This is New" : "sd"}</MyParagraph>
     
   );
 };
