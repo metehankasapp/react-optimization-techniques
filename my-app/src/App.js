@@ -17,6 +17,8 @@ function App() {
     }
   }, [allowToggle]);
   //Eğer usecallback kullanırken içerik olarak [] boş bırakırsan sadece app yükledndiğinde çalışır ve diğer türlü çalışmaz
+  // eğer bir fonksionda 2 den fazla değişiklik yani state güncellemesi varsa react bunun iki state güncellemesini de aynı şekilde yapar.ub yanlıştır.
+  // bunu dğzeltmek için usecallback kullanılabilir.
 
   const allowToggleHandler = () => {
     setAllowToggle(true);
