@@ -19,6 +19,7 @@ function App() {
   //Eğer usecallback kullanırken içerik olarak [] boş bırakırsan sadece app yükledndiğinde çalışır ve diğer türlü çalışmaz
   // eğer bir fonksionda 2 den fazla değişiklik yani state güncellemesi varsa react bunun iki state güncellemesini de aynı şekilde yapar.ub yanlıştır.
   // bunu dğzeltmek için usecallback kullanılabilir.
+  // usememo ise  ihtiyac duyulmadığı sürece o fonksiynou çalıştırmaz ve callbackten daha iyidir.biraz memory kullanır ve performansı etkiler.
 
   const allowToggleHandler = () => {
     setAllowToggle(true);
